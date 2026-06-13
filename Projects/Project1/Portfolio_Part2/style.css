@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #0b243d;
+    --secondary-color: #1b1550;
+    --accent-color: #a3aae9;
+    --accent-color2: #bdabc9;
+    --background-color: rgba(134, 116, 155, 0.233);
+}
+body {
+    font-family: "Lora", serif;
+    background-image: url("./background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: var(--background-color);
+    border-radius: 20px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header-text {
+    display: block;
+    text-align: center;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--background-color);
+}   
+
+th {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+td, th {
+    padding: 12px;
+    border: 3px solid var(--primary-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--accent-color);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--accent-color2);
+}
+
+a {
+    color: var(--secondary-color);
+}
